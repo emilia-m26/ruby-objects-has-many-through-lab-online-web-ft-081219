@@ -23,6 +23,6 @@ class Doctor
       Appointment.all.map {|a| a.patient}
       # appointments.map do |appointment|
       # appointment.patients
-    end
+    #end
   end
 end
