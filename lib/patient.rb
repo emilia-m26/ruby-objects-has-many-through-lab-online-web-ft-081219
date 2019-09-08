@@ -1,5 +1,5 @@
 class Patient 
-  # @@all=[]
+  @@all=[]
   
   attr_accessor :name
   
