@@ -5,7 +5,7 @@ class Patient
   
   def initialize(name)
     @name=name
-    # @@all << self
+    @@all << self
   end
   
   def new_appointment(doctor, date)
