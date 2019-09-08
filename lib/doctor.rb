@@ -20,7 +20,7 @@ class Doctor
   end
  
   def patients 
-      Appointment.all.each {|a| a.patient}
+      Appointment.all.select {|a| a.patient}
       # appointments.map do |appointment|
       # appointment.patients
     #end
