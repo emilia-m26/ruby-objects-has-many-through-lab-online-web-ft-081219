@@ -5,7 +5,6 @@ class Doctor
   def initialize(name)
     @name=name
     @@all << self
-    # @appointments=[]
   end
   
   def self.all 
@@ -14,7 +13,6 @@ class Doctor
 
   def new_appointment(date, patient)
    appointment= Appointment.new(date, patient, self)
-  # @appointments << appointment
   end
   
   def appointments 
@@ -23,8 +21,5 @@ class Doctor
  
   def patients 
       self.appointments.map {|a| a.patient}
-      # appointments.map do |appointment|
-      # appointment.patients
-    #end
   end
 end
