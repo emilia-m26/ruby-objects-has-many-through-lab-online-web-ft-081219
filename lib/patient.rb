@@ -18,6 +18,7 @@ class Patient
   
   def doctors 
     # Appointment.all.collect {|a| a.doctor}
+    appointments.map { |a| a.doctor}
   end
   
   def self.all
